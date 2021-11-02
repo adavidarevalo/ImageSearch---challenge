@@ -2,9 +2,15 @@ import React, {useState, Fragment} from "react"
 import { AiOutlineSearch } from "react-icons/ai";
 import styled from "@emotion/styled"
 import logo from "../images/logo.png"
+import {keyframes} from '@emotion/react'
 
+const fadeIn = keyframes`
+0% {opacity: 0;}
+100% {opacity: 1;}
+`
 
 const FormDiv = styled.div`
+animation: ${fadeIn} 1s both;
 &.ChangeStyles{
   height: 25vh;
   img{

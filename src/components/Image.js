@@ -1,8 +1,14 @@
 import React from "react"
 import styled from "@emotion/styled"
 import { AiOutlineLike, AiFillEye } from "react-icons/ai";
+import {keyframes} from '@emotion/react'
 
+const fadeIn = keyframes`
+0% {opacity: 0;}
+100% {opacity: 1;}
+`
 const ImageDiv = styled.div`
+animation: ${fadeIn} 1s both;
 background: #fff;
 box-shadow: 2px 2px 7px 0px rgb(0 0 0 / 20%);
 margin: 25px;
